@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script type="module" crossorigin src="/js_92_AlinaTantsura/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_92_AlinaTantsura/assets/dark-light-switcher-cadad8cc.js">
+    <link rel="modulepreload" crossorigin href="/js_92_AlinaTantsura/assets/vendor-13e289f0.js">
+    <link rel="stylesheet" href="/js_92_AlinaTantsura/assets/dark-light-switcher-47554f01.css">
+    <link rel="stylesheet" href="/js_92_AlinaTantsura/assets/vendor-a0b14d8a.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container div-header">
+    <!-- ================================================================ -->
+    <!--Контейнер з лого-svg-->
+
+    <a href="./index.html" class="link">
+      <div class="logo-container logo-light">
+        <svg class="icon-logo" width="24" height="24">
+          <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#logo-light"></use>
+        </svg>
+        <svg class="icon-logo-text" width="77" height="20">
+          <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#Bookshelf-light"></use>
+        </svg>
+      </div>
+    </a>
+
+    <!-- ================================================================ -->
+    <!--Контейнер з перемикачем та меню-desctop-->
+    <div class="menu-container">
+      <!--Меню-->
+
+      <!-- Desctop-menu-header -->
+      <nav class="header-nav">
+        <ul class="header-menu-list">
+          <li class="hm-list-item">
+            <a href="./index.html" class="header-home js-nav-link">Home</a>
+          </li>
+          <li class="hm-list-item">
+            <a href="./shopping.html" class="header-shoplist js-nav-link">
+              Shopping list
+              <svg class="icon-bag" width="20" height="20">
+                <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#cartshop-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="div-switch-user">
+        <!--Тут має бути перемикач теми світла/темна-->
+        <label id="switch" class="switch">
+          <input 
+              type="checkbox" 
+              class="dark-mode-toggle" 
+              id="dark-mode-toggle"
+              aria-label="toggle dark mode"/>
+          <span class="slider round"></span>
+        </label>
+
+        <!--User-shopplist-->
+        <div class="header-user visually-hidden">
+          <div class="header-user-image">
+            <svg class="icon-user" width="12" height="16">
+              <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#user"></use>
+            </svg>
+          </div>
+          <span class="header-user-name">Stephen</span>
+          <svg class="icon-arrow-down-user" width="23" height="26">
+            <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#user-arrow"></use>
+          </svg>
+        </div>
+        <!--Div for user sign up-->
+        <div class="header-user log-in">
+          <span class="header-log-in">Sign-up</span>
+          <svg class="icon-arrow-right" width="20" height="20">
+            <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#arrow-narrow-right"></use>
+          </svg>
+        </div>
+
+        <!--Тут має бути Mobile-menu-header-->
+        <div class="mobile-menu-container">
+          <!--Burger-menu-->
+          <button class="menu-toggle js-open-menu">
+            <svg class="icon-burger" width="28">
+              <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#align-left"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="burger-backdrop is-hidden">
+  <div class="burger-menu">
+    <div class="header-burger container">
+      <!-- =======Logo=====-->
+      <a href="./index.html" class="link">
+        <div class="logo-container logo-light">
+          <svg class="icon-logo" width="24" height="24">
+            <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#logo-light"></use>
+          </svg>
+          <svg class="icon-logo-text" width="77" height="20">
+            <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#Bookshelf-light"></use>
+          </svg>
+        </div>
+      </a>
+      <!-- ================== SWITCHER AND CLOSE BTN ================================================ -->
+      <div class="div-switch-user burger-switch-cont">
+        <!--Тут має бути перемикач теми світла/темна-->
+        <label id="switch-mob" class="switch">
+        <!-- <label class="switch"></label> -->
+          <input
+            type="checkbox"
+            class="dark-mode-toggle-burger"
+            id="dark-mode-toggle-burger"
+            aria-label="toggle dark mode"
+          />
+          <span class="slider round"></span>
+        </label>
+
+        <div class="close-burger-container">
+          <!--Burger-menu-->
+          <button class="menu-toggle js-close-menu">
+            <svg class="icon-close-burger" width="28" height="28">
+              <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#x-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="burger-main-part">
+      <div class="burger-upper">
+        <!-- ========================== SIGN UP BUTTON ============================== -->
+        <div class="sign-up-container">
+          <button type="button" class="sign-up-btn">
+            Sign Up
+            <svg class="logout-icon-arrow" width="20" height="20">
+              <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#arrow-narrow-right"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- ============ USER ACCOUNT ============================================== -->
+        <div class="burger-user visually-hidden">
+          <div class="header-user-image">
+            <svg class="icon-user" width="12" height="16">
+              <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#user"></use>
+            </svg>
+          </div>
+          <span class="header-user-name">Stephen</span>
+          <svg class="icon-arrow-down-user" width="23" height="26">
+            <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#user-arrow"></use>
+          </svg>
+        </div>
+
+        <!-- =============== BURGER NAV MENU ======================================== -->
+        <nav class="burger-nav">
+          <ul class="burger-menu-list">
+            <li class="burger-list-item">
+              <a
+                href="./index.html"
+                class="burger-home js-nav-link"
+                >Home</a
+              >
+            </li>
+            <li class="burger-list-item">
+              <a href="./shopping.html" class="burger-shoplist js-nav-link">
+                Shopping list
+                <svg class="bag-burger-icon" width="20" height="20">
+                  <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#cartshop-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- ======================== LOGOUT BTN ================================================ -->
+      <div class="logout-btn-container visually-hidden">
+        <button type="button" class="logout-btn">
+          Log out
+          <svg class="logout-icon-arrow" width="20" height="20">
+            <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+        <div class="container shopping-box">
+        <section class="support support-for-shopping">
+    <h3 class="support-title">
+    Support Ukraine
+    <svg class="support-svg" width="20px" height="32px">
+      <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#Ukraine"></use>
+    </svg>
+  </h3>
+  <div class="slider-container">
+    <ul class="support-list js-support">
+    </ul>
+  </div>
+
+  <div class="button-support slider-button">
+    <button class="support-button">
+      <svg class="support-button-svg arrow-down">
+        <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#arrow-down"></use>
+      </svg>
+      <svg class="support-button-svg arrow-up hidden">
+        <use href="/js_92_AlinaTantsura/assets/InlineSprite-e8a44745.svg#arrow-up"></use>
+      </svg>
+    </button>
+  </div>
+  </section>
+  
+        <section class="shopping-section">
+  <h1 class="shopping-header">
+    Shopping
+    <span class="shopping-span">List</span>
+  </h1>
+  <div class="no-books">
+    <p class="no-books-text">
+      This page is empty, add some books and proceed to order.
+    </p>
+    <img
+      src="../img/books-shopping-list@1x-min.png"
+      alt="stack of books"
+      class="no-books-img"
+      srcset="/js_92_AlinaTantsura/assets/books-shopping-list@1x-min-a8e7c57b.png 1x, /js_92_AlinaTantsura/assets/books-shopping-list@2x-min-cbdb2a4c.png 2x"
+    />
+  </div>
+  <div class="shopping-list">
+    <ul class="books-list"></ul>
+  </div>
+  <div id="tui-pagination-container" class="tui-pagination"></div>
+  <div class="loader-backdrop is-hidden">
+    <span class="loader"></span>
+  </div>
+</section>
+
+        </div>
+      </main>
+      <button class="scroll-up">
+    <span class="scroll-up-span">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3.37495 14.7L11.775 6.275C11.875 6.175 11.9833 6.10433 12.0999 6.063C12.2166 6.021 12.3416 6 12.4749 6C12.6083 6 12.7333 6.021 12.8499 6.063C12.9666 6.10433 13.075 6.175 13.175 6.275L21.6 14.7C21.8333 14.9333 21.95 15.225 21.95 15.575C21.95 15.925 21.825 16.225 21.575 16.475C21.325 16.725 21.0333 16.85 20.7 16.85C20.3666 16.85 20.075 16.725 19.825 16.475L12.4749 9.125L5.12495 16.475C4.89161 16.7083 4.60428 16.825 4.26295 16.825C3.92095 16.825 3.62495 16.7 3.37495 16.45C3.12495 16.2 2.99995 15.9083 2.99995 15.575C2.99995 15.2417 3.12495 14.95 3.37495 14.7Z" fill="white"/>
+        </svg>
+    </span>
+</button>
+
+      
+  </body>
+</html>

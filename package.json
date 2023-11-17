@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-twelve_team_JS/",
+    "build": "vite build --base=/js_92_AlinaTantsura/",
     "preview": "vite preview"
   },
   "devDependencies": {
